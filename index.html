@@ -7,6 +7,24 @@
         body{
             background-color: black;
             color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+           text-align: center;
+           position: sticky;
+           top: 0;
+           padding: 10px 0px;
+           background-color: blueviolet;
+           
+        }
+        .navigation-bar ul li{
+            display: inline;
+        }
+        .navigation-bar ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 0px 30px;
         }
         #section1{
             display: flex ;
@@ -43,12 +61,12 @@
         }
         #card-section{
             text-align: center;
-            padding-top: 500px;
+            padding-top: 300px;
             justify-content: center;
         }
         .skills-container{
             display: flex;
-            height: 70vh;
+            height: 100vh;
         }
        .section{
             border: 5px solid transparent;
@@ -87,10 +105,108 @@
        }
        .work-container{
         display: flex;
+        color: gray;
+        height: 100vh;
+       }
+       .work-content{
+        border: 1px solid gray;
+        justify-content: center;
+        margin: auto 30px;
+        border-radius: 20px;
+       }
+       .work-content p{
+        font-size: 14px;
+        font-weight: lighter;
+        text-align: justify;
+        padding-right: 15px;
+        
+       }
+       .work1{
+        width: 30%;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+       .work2{
+        width: 30%;
+        padding-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+       .work3{
+        width: 30%;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+       .work-content img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       }
+       .work-content button{
+        color: gray;
+        background-color: black;
+        border: 2px solid gray;
+        margin: 10px 0px;
+        padding: 10px 15px;
+        border-radius: 5px;
+       }
+       #testimonial{
+        text-align: center;
+        margin: 17vh 0vh;
+       }
+       .test-container{
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+       }
+       .test-content{
+        width: 50%;
+        margin: auto;
+       }
+       .test-words{
+        text-align: justify;
+        padding: 0px 15px;
+        padding-left: 35px;
+       }
+       .test-words p{
+        color: gray;
+        padding: 5px 0px;
+       }
+       .test-words button{
+        border: none;
+        border-radius: 5px;
+        padding: 13px 23px;
+        font-size: 11px;
+        font-weight: bold;
+        color: #fff;
+        background-color: blueviolet;
+        cursor: pointer;
+       }
+       .test-img img{
+        border-radius: 50%;
+       }
+       footer{
+        background-color: white;
+        color: black;
+        padding: 10px 0px;
+        text-align: center;
        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="navigation-bar">
+            <nav>
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#card-section">Skills</a></li>
+                    <li><a href="#work-on">Work</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section id="section1">
         <div class="container">
             <div class=" samemargin div-1"> 
@@ -150,28 +266,28 @@
     <section id="work-on">
         <h1>Worked On</h1>
         <div class="work-container">
-            <div class="work-content1 work1">
-                <img src="./General_Electric_.jpg" alt="woked on">
+            <div class="work-content work1">
+                <img src="./General_Electric_.jpg" alt="woked on" width="390" height="280">
                 <p>
                     The General Electric GE90 is a family 
                     of high-bypass turbofan aircraft engines 
                     built by GE Aerospace for the Boeing 777, 
                     with thrust ratings from 81,000 to 115,000 
-                    pounds-force (360 to 510 kilonewtons). 
+                    pounds-force (340 to 510 kilonewtons). 
                     It entered service with British Airways 
                     in November 1995. It is one of three options 
                     for the 777-200, -200ER, and -300 versions, and 
-                    the exclusive engine of the -200LR, -300ER, and 777F.
+                    the exclusive engine of the -200LR, -300ER, and 777F.  
                     It was the largest jet engine, until being surpassed 
                     in January 2020 by its successor, the 110,000 lbf 
                     (490 kN) GE9X, which has a larger fan diameter by 6
-                    inches (15 cm). However, the GE90-115B, the most 
-                    recent variant of the GE90, is rated for a higher 
-                    thrust (115,000 lbs) than the GE9X.
+                    inches (15 cm). 
                 </p>
+                </p>
+                <button>Continue Reading</button>
             </div>
-            <div class="work-content2 work2">
-                <img src="./Kure_midget_subs1.jpg" alt="woked on">
+            <div class="work-content work2">
+                <img src="./Kure_midget_subs1.jpg" alt="woked on" width="390" height="280">
                 <p>
                     A midget submarine is any submarine under 150 tons,
                     typically operated by a crew of one or two but 
@@ -183,21 +299,45 @@
                     mini-submarine from a Falcon 9 liquid oxygen transfer 
                     tube in eight hours and personally delivered it to Thailand.
                 </p>
+                <button>Continue Reading</button>
             </div>
-            <div class="work-content3 work3">
-                <img src="./OIP.jpg" alt="Worked on">
-                <p>SponsorUb is an website that I worked on that help
+            <div class="work-content work3">
+                <img src="./OIP.jpg" alt="Worked on" width="350" height="280">
+                <p>
+                    SponsorUb is an website that I worked on that help
                     people in need of a job or people that are looking
                     forward to become young entreuprenuer to beecome more 
-                    successfull. It gives poeple the lessi=on and skills 
+                    successfull. It gives poeple the lessons and skills 
                     needed whether they are poor or not. It was created in 
                     a way by wich you can acess it with or without internet.
                     Not only that but it also help the people in need with
                     education that they can not acquire or the skills that they 
                     can not acquire.
                 </p>
+                <button>Continue Reading</button>
             </div>
         </div>
     </section>
+    <section id="testimonial">
+        <h2>Testimonial</h2>
+        <div class="test-container">
+            <div class="test-content test-words">
+                <h1>Jhon Doe</h1>
+                <p>working on with all thise entreprise was really great 
+                    I learnt new stuff and the hadest thing that I hadestto do was 
+                    when I was working with Boeing.
+                </p>
+                <button>Read more></button>
+            </div>
+            <div class="test-content test-img">
+                <img src="./download (5).jpeg" alt="picture" width="300" height="300">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>&copy;Jhon Doe</p>
+        </div>
+    </footer>
 </body>
 </html>
